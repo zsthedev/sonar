@@ -1,4 +1,5 @@
 @import "./index.css";
+@import "node_modules/locomotive-scroll/dist/locomotive-scroll";
 
 * {
   margin: 0;
@@ -12,9 +13,57 @@
   display: none;
 }
 
-
 body {
   background-color: var(--gray);
+}
+
+.preloader {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  left: 0;
+
+  .box-container {
+    width: 250px;
+    height: 250px;
+    border: 10px solid black;
+    padding: 10px;
+    .preloader-box {
+      width: 100%;
+      height: 100%;
+      border: 10px solid black;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      #inner-box {
+        position: relative;
+      }
+
+      .hor {
+        width: 50px;
+        height: 20px;
+        background-color: black;
+      }
+
+      .ver {
+        position: absolute;
+        height: 50px;
+        width: 20px;
+        background-color: black;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
 }
 nav {
   width: 100%;
@@ -166,7 +215,7 @@ nav {
           text-decoration: none;
           color: white;
           font-size: 0.8vw;
-         
+
           display: flex;
           align-items: center;
           justify-content: flex-end;
@@ -641,6 +690,10 @@ nav {
       color: var(--white);
       font-size: 20vw;
       transform: translateX(-100%);
+
+      span {
+        display: inline-block;
+      }
     }
   }
 }
@@ -685,7 +738,7 @@ nav {
     .box:nth-child(3):hover,
     .box:nth-child(4):hover {
       width: 24%;
-      transform: scale(1.4, 1.1);
+      transform: scale(1.5, 1.25);
     }
 
     .box:hover {
