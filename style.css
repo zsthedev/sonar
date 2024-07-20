@@ -53,7 +53,7 @@ nav {
         align-items: center;
         border-radius: 4px;
         > i {
-          font-size: 3vw;
+          font-size: 2.8vw;
           border-radius: 2px;
         }
       }
@@ -154,9 +154,8 @@ nav {
 
         > p {
           text-align: center;
-          font-family: stratos_reg;
+          font-family: messina_sans;
           font-size: 0.7vw;
-          font-family: messina_semibold;
         }
       }
       .right {
@@ -167,7 +166,7 @@ nav {
           text-decoration: none;
           color: white;
           font-size: 0.8vw;
-          font-family: messina_semibold;
+         
           display: flex;
           align-items: center;
           justify-content: flex-end;
@@ -175,7 +174,7 @@ nav {
 
           span:nth-child(1) {
             border-bottom: 2px dashed white;
-            font-family: messina_semibold;
+            font-family: messina_sans;
           }
         }
         a:hover .circle i {
@@ -268,7 +267,7 @@ nav {
           span:nth-child(1) {
             display: inline-block;
             color: var(--white);
-            font-family: messina_semibold;
+            font-family: messina_sans;
             font-size: 0.7vw;
             border-bottom: 1px dashed var(--white);
           }

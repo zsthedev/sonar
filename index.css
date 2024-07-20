@@ -36,6 +36,11 @@
 }
 
 @font-face {
+  font-family: messina_sans;
+  src: url("./assets/fonts/messina/messina_sans.ttf");
+}
+
+@font-face {
   font-family: stratos_reg;
   src: url("./assets/fonts/stratos/stratos_reg.otf");
 }
